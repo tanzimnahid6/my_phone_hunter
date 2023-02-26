@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- modal part start -->
+
+<input type="checkbox" id="my-modal" class="modal-toggle" />
+<div class="modal">
+<div class="modal-box">
+    <h3 id="phone-name" class="font-bold text-lg"></h3>
+    <img id="phone-img" class="object-scale-down h-48 w-96" src="" alt="">
+    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+
+    <button class="btn">Button</button>
+    <div class="modal-action">
+    <label for="my-modal" class="btn">Close!</label>
+    </div>
+</div>
+</div>
+
+<!-- modal part end -->
+<body>
+    <header>
+        <h1 class="text-3xl text-center underline">Welcome tor phone hunter API</h1>
+    </header>
+    <main>
+        <!-- Display search feild -->
+        <div class="flex justify-center gap-1 py-5">
+            <input id="search-feild" type="text" placeholder="Search your phone" class="input input-bordered input-accent w-full max-w-xs"/>
+            <button id="search-btn" class="btn btn-success">Search</button>
+
+        </div>
+        <section>
+
+            <section id="not-found">
+                
+            </section>
+            <div id="phone-container" class="grid gap-4 grid-cols-1 md:grid-cols-3  border-4 mx-10">
+            </div> 
+        </section>
+                <!-- show all button  -->
+        <div id="show-all" class="flex justify-center my-5 invisible" >
+            <button id="show-all-btn" class="btn btn-primary  ">Show ALL</button>
+        </div>
+
+        <!-- show Modal -->
+        <!-- The button to open modal -->
+    </main>
+  
+
+    <script src="app.js"></script>
+</body>
+</html>
